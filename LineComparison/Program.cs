@@ -1,2 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+namespace LineComparison
+{
+    class Program
+    {
+        static void Main(String[] args)
+        {
+            LengthOfLine computation = new LengthOfLine(35, 74, 82, 100);
+            computation.CalculateLength();
+        }
+    }
+}
