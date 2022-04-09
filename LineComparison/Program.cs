@@ -9,10 +9,18 @@ namespace LineComparison
             double line1 = computation.CalculateLength();
             LengthOfLine line = new LengthOfLine(35, 74, 82, 110);
             double line2 = line.CalculateLength();
-            if (line1.Equals(line2))
+            if (line1.CompareTo(line2) == 0)
+            {
                 Console.WriteLine("Length of both lines are equal");
+            }
+            if (line1.CompareTo(line2) > 0)
+            {
+                Console.WriteLine("Line 1 is greater");
+            }
             else
-                Console.WriteLine("Length of both lines are not equal");
+            {
+                Console.WriteLine("Line 2 is greater");
+            }
                 
         }
     }
